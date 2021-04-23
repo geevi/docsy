@@ -1,7 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ $color := .Get "color" | default "primary" }}
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Definition</h4>
+<div class="alert alert-primary definition" role="alert">
+<span class="definition-heading">Definition</span>{{ with .Get "title" }}<h4>{{ . | safeHTML }}</h4>{{ end }}
 {{ if eq .Page.File.Ext "md" }}
     {{ .Inner | markdownify }}
 {{ else }}
