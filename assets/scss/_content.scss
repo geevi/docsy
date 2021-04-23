@@ -65,6 +65,8 @@
     .alert:not(:first-child) {
         margin-top: 2 * $spacer;
         margin-bottom: 2 * $spacer;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .lead {

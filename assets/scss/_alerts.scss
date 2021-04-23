@@ -10,6 +10,8 @@
         &-#{$color} {
             & .alert-heading {
                 color: $value;
+                text-transform: uppercase;
+                font-size: 0.9em;
             }
 
             border-style: solid;
